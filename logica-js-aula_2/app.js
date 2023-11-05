@@ -10,6 +10,8 @@ while (chute != numeroSecreto) {
   // se chute for igual número secreto
   if (chute == numeroSecreto) {
     alert(`Parabéns, você acertou! O número secreto é o ${numeroSecreto}!`);
+    // break;
+    alert("Pressione a tecla F5 para recomeçar!");
   } else if (chute < numeroSecreto) {
     alert(`Tente outra vez, ${chute} é menor que o número secreto!`);
   } else {
