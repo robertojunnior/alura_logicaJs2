@@ -1,0 +1,17 @@
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --bg-color: #3b405f;
+    --primary-color: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    padding: 40;
+    font-family: var(--font-family);
+}
+
+h2 {
+    display: flex;
+    text-align: center;
+}

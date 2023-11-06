@@ -13,8 +13,8 @@ while (chute != numeroSecreto) {
     alert(
       `Parabéns, você acertou em ${tentativas} tentativas! O número secreto é o ${numeroSecreto}!`
     );
-    // break;
     alert("Pressione a tecla F5 para recomeçar!");
+    // break;
   } else {
     if (chute > numeroSecreto) {
       alert(`Tente outra vez, ${chute} é maior que o número secreto!`);
