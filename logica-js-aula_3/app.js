@@ -11,6 +11,7 @@ while (chute != numeroSecreto) {
   // se chute for igual número secreto
   if (chute == numeroSecreto) {
     break;
+    // encerramos o acerto aqui para após o loop criar outra condição se acertar de primeira
   } else {
     if (chute > numeroSecreto) {
       alert(`Tente outra vez, ${chute} é maior que o número secreto!`);
@@ -23,14 +24,20 @@ while (chute != numeroSecreto) {
   console.log(tentativas);
 }
 
-if (tentativas > 1) {
-  alert(
-    `Parabéns, você acertou em ${tentativas} tentativas! O número secreto é o ${numeroSecreto}!`
-  );
-  alert("Pressione a tecla F5 para recomeçar!");
-} else {
-  alert(
-    `Parabéns, você acertou na primeira tentativa! O número secreto é o ${numeroSecreto}!`
-  );
-  alert("Pressione a tecla F5 para recomeçar!");
-}
+let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa"; // operador ternário
+
+alert(
+  `Parabéns, você acertou em ${tentativas} ${palavraTentativa}! O número secreto é o ${numeroSecreto}!`
+);
+
+// if (tentativas > 1) {
+//   alert(
+//     `Parabéns, você acertou em ${tentativas} tentativas! O número secreto é o ${numeroSecreto}!`
+//   );
+//   alert("Pressione a tecla F5 para recomeçar!");
+// } else {
+//   alert(
+//     `Parabéns, você acertou na primeira tentativa! O número secreto é o ${numeroSecreto}!`
+//   );
+//   alert("Pressione a tecla F5 para recomeçar!");
+// }
