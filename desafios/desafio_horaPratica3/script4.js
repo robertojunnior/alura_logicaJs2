@@ -7,6 +7,7 @@ while (contador4 <= 20) {
   contador4++;
 }
 
+// Exemplo = Resposta Post Fórum
 // Solicita ao usuário que digite um número e armazena o valor na variável numeroMaximo.
 let numeroMaximo = prompt("Digite um número para a contagem progressiva:");
 
