@@ -1,12 +1,12 @@
 alert("Boas vindas ao jogo do número secreto!");
-let numeroSecreto = 15;
+let numeroSecreto = parseInt(Math.random() * 100 + 1);
 console.log(numeroSecreto);
 let chute;
 let tentativas = 1;
 
 // enquanto
 while (chute != numeroSecreto) {
-  chute = prompt("Escolha um número de 1 a 20!");
+  chute = prompt("Escolha um número de 1 a 100!");
 
   // se chute for igual número secreto
   if (chute == numeroSecreto) {
@@ -25,19 +25,6 @@ while (chute != numeroSecreto) {
 }
 
 let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa"; // operador ternário
-
 alert(
   `Parabéns, você acertou em ${tentativas} ${palavraTentativa}! O número secreto é o ${numeroSecreto}!`
 );
-
-// if (tentativas > 1) {
-//   alert(
-//     `Parabéns, você acertou em ${tentativas} tentativas! O número secreto é o ${numeroSecreto}!`
-//   );
-//   alert("Pressione a tecla F5 para recomeçar!");
-// } else {
-//   alert(
-//     `Parabéns, você acertou na primeira tentativa! O número secreto é o ${numeroSecreto}!`
-//   );
-//   alert("Pressione a tecla F5 para recomeçar!");
-// }
