@@ -36,3 +36,23 @@ let media = mediaNumeros(entradaNumero1, entradaNumero2, entradaNumero3);
 console.log(`A média entre ${entradaNumero1}, ${entradaNumero2} e ${entradaNumero3} é ${media.toFixed(2)}.`);
 
 // 5 - Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
+let entradaN1 = parseInt(prompt("Escolha um número para ver qual é o maior entre eles:"));
+let entradaN2 = parseInt(prompt("Escolha um segundo número:"));
+
+function qualMaiorNumero(entradaN1, entradaN2) {
+  return entradaN1 > entradaN2 ? entradaN1 : entradaN2;
+}
+
+let resultadoMaiorNumero = qualMaiorNumero(entradaN1, entradaN2);
+console.log(`O maior número entre ${entradaN1} e ${entradaN2} é o ${resultadoMaiorNumero}`);
+
+// 6 - Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo
+
+let entMultN1 = parseInt(prompt("Escolha um número e veja o resultado da multiplicação por ele mesmo:"));
+
+function multEleMesmo(numero) {
+  return numero * numero ;
+}
+
+let resultadoMult = multEleMesmo(entMultN1);
+console.log(`O resultado da multiplicação foi ${resultadoMult}.`);
