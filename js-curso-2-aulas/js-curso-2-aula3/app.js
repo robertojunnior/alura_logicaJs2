@@ -23,10 +23,17 @@ function verificarChute() {
     } else {
       exibirTextoNaTela("p", "O número secreto é maior!");
     }
-    tentativas++
+    tentativas++;
+    limparCampo();
+
   }
 }
 
 function gerarNumeroAleatorio() {
   return parseInt(Math.random() * 10 + 1);
+}
+
+function limparCampo() {
+  chute = document.querySelector("input")
+  chute.value = "";
 }
