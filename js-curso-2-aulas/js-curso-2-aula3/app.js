@@ -1,3 +1,4 @@
+let listaDeNumerosSorteados = [];
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -22,7 +23,6 @@ function verificarChute() {
     exibirTextoNaTela("p", mensagemTentativas);
     document.getElementById("reiniciar").removeAttribute("disabled");
 
-
   } else {
     if (chute > numeroSecreto) {
       exibirTextoNaTela("p", "O número secreto é menor!");
@@ -31,12 +31,11 @@ function verificarChute() {
     }
     tentativas++;
     limparCampo();
-
   }
 }
 
 function gerarNumeroAleatorio() {
-  return parseInt(Math.random() * 10 + 1);
+  let numeroEscolhido = parseInt(Math.random() * 10 + 1);
 }
 
 function limparCampo() {
